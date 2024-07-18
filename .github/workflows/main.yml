@@ -14,8 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: wget https://s3.eu-central-1.amazonaws.com/avg-kitti/data_depth_velodyne.zip
+    - name: Download file
+      run: wget https://d36yt3mvayqw5m.cloudfront.net/public/v1.0/can_bus.zip
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3
